@@ -20,7 +20,7 @@ public partial class Goods_In_SubInv : System.Web.UI.Page
     public Goods_In_SubInv()
     {
         EBSDM13A = "Data Source=(DESCRIPTION="
-               + "(ADDRESS=(PROTOCOL=TCP)(HOST=tebvm73.unix.morrisons.net) (PORT=1521))"
+               + "(ADDRESS=(PROTOCOL=TCP)(HOST=tebvm73.unix.company.net) (PORT=1521))"
                + "(CONNECT_DATA=(SERVICE_NAME=EBSDM13A)));"
                + "User Id=XXPOC;Password=oragang12;";
     }  
