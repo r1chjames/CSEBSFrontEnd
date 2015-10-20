@@ -3,7 +3,7 @@
 
 ### What is this repository for? ###
 
-* EBS PoC is a web tool created to prove that C# and ASP.NET could be used to book stock in via a goods in API to EBS.
+* EBS Front End is a web tool created to prove that C# and ASP.NET could be used to book stock in via a goods in API to EBS.
 
 ### Features ###
 
