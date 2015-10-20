@@ -1,0 +1,266 @@
+﻿body
+{
+    margin: 0; padding: 0;
+    cursor: default;
+}
+img { 
+    margin: 0; padding: 0; border: 0;
+    cursor: pointer;
+}
+#main_container {
+    min-width: 1000px;
+}
+
+/* HEADER SECTION */
+
+#header {
+    padding-top: 5px;
+    display: block;
+    min-width: 1000px; width: 100%; height: 70px;
+    background: #165d83;
+    border-bottom: 1px solid #145476;
+}
+#header_text {
+    padding-top: 5px;
+    font-family: "Arial, Helvetica", sans-serif; font-size: 40px; color: #fff;
+}
+#logged {
+    display: block;
+    min-width: 1000px; width: 100%; height: 22px;
+    background: #d8d8d8;
+    border-top: 2px solid #fff;
+}
+#logged_text {
+    display: inline-block;
+    margin-left: 20px;
+    font-family: "Arial, Helvetica", sans-serif; font-size: 11px; color: #165d83; text-transform: uppercase;
+}
+
+/* HOME PAGE */
+
+#home_container {
+    width: 1000px;
+    margin-left: auto; margin-right: auto;
+    text-align: center;
+}
+.home_button {
+    margin-top: 60px; margin-left: auto; margin-right: auto; padding: 30px 20px 30px 20px;
+    display: block;
+    min-width: 300px; max-width: 500px;
+    background: #ddeaf7;
+    border: 1px solid #accbea;
+    font-family: "Arial, Helvetica", sans-serif; font-size: 30px; color: #2c6c91; cursor: pointer;
+}
+.home_button a, .home_button:active, .home_button:link, .home_button:visited, .home_button:focus {
+    color: #2c6c91; text-decoration: none;
+}
+.home_button:hover {
+    background: #165d83; color: #fff;
+}
+
+/* GOODS IN */
+
+#goods_grid {
+    padding-right: 40px;
+    height: 440px;
+    text-align: left; text-transform: uppercase;
+}
+#goods_grid_2 { 
+    margin-bottom: 15px;
+    padding-right: 40px;
+    height: 280px;
+    text-align: left; text-transform: uppercase;
+}
+.goods_box {
+    margin-bottom: 10px;
+    padding: 5px 2px 5px 5px;
+    border: 1px solid #145476;
+    font-family: "Arial, Helvetica", sans-serif; font-size: 12px; color: #000; text-align: left; 
+}
+.Date_title {
+    padding-right: 30px;
+    font-family: "Arial, Helvetica", sans-serif; font-size: 28px; color: #000; text-align: center; text-transform: uppercase;
+}
+#grid_header {
+    padding-right: 57px;
+}
+#grid_header_2 {
+    width: 100%;
+    padding : 8px 8px 8px 14px;
+    background: #165d83;
+    border: 1px solid #145476; 
+    font-family: "Arial, Helvetica", sans-serif; font-size: 18px; color: #fff; cursor: pointer; text-align: left; font-weight: normal;
+}
+.Grid {
+    width: 100%;
+    background: #fff;
+    font-family: "Arial, Helvetica", sans-serif; font-size: 18px; color: #000; cursor: pointer; text-align: left;
+}
+.Grid td {
+    padding: 14px;
+    border: 1px solid #145476;
+}
+
+/* OTHER */
+
+.form_block {
+   margin: 0; padding: 0; border: 0;
+}
+.text_box {
+    margin: 0px 5px 0px 10px;
+    width: 115px; padding: 4px 10px 4px 10px;
+    background: #fff;
+    border: 1px solid #d8d8d8; border-radius: 4px;
+    font-size: 12px; color: #000; font-weight: bold; text-transform: uppercase; cursor: pointer; letter-spacing: 1px;
+}
+.text_box:focus, .text_box_short:focus {
+    background: #ddeaf7;
+}
+.text_box_short {
+    margin: 0px 5px 0px 10px;
+    width: 90px; padding: 4px 10px 4px 10px;
+    background: #fff;
+    border: 1px solid #d8d8d8; border-radius: 4px;
+    font-size: 12px; color: #000; font-weight: bold; text-transform: uppercase; cursor: pointer; letter-spacing: 1px;
+}
+.text_box_disabled {
+    margin: 0px 5px 0px 10px;
+    width: 90px; padding: 4px 10px 4px 10px;
+    background: #eaeaea;
+    border: 1px solid #d8d8d8; border-radius: 4px;
+    font-size: 12px; color: #000; font-weight: bold; text-transform: uppercase; cursor: pointer; letter-spacing: 1px;
+}
+.submit_button {
+    margin: 0px 0px 0px 5px;
+    width: 80px; padding: 6px 10px 6px 10px;
+    background: #8bd5fc;
+    border: 1px solid #43bafa;
+    font-size: 12px; color: #000; font-weight: bold; text-transform: uppercase; cursor: pointer;
+}
+
+/* ALERT BOX */
+
+.jqifade {
+	position: absolute; 
+	background: #777; 
+}
+body .jqi {
+    overflow:hidden;
+}
+.jqi { 
+    margin-top: 100px;
+	width: 520px;
+	font-family: "Arial, Helvetica", sans-serif; font-size: 28px; color: #000; cursor: default; text-align: center; font-weight: normal;
+	position: fixed; top: 40%;
+	background: #fff; 
+	border: solid 1px #eeeeee;
+	border-radius: 4px;	-moz-border-radius: 4px; -webkit-border-radius: 4px;
+	padding: 10px;
+}
+.jqi .jqiclose { 
+	position: absolute;
+	top: 0px; right: 5px; 
+	width: 20px; 
+	cursor: pointer; 
+	color: #bbb; 
+	font-weight: bold; 
+}
+.jqi .jqistate {
+	background-color: #fff;
+}
+.jqi .jqititle {
+	padding: 5px 10px;
+	font-size: 16px; 
+	line-height: 20px; 
+	border-bottom: solid 1px #eeeeee;
+}
+.jqi .jqimessage { 
+	padding: 60px; 
+	color: #333; 
+}
+.jqi .jqibuttons { 
+	text-align: right; 
+	margin: 0 -7px -7px -7px;
+	border-top: solid 1px #e4e4e4; 
+	background-color: #d8d8d8;
+	border-radius: 0 0 4px 4px;	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px;
+}
+.jqi .jqibuttons button { 
+	margin: 0;
+	padding: 15px 20px;
+	background-color: transparent;
+	font-weight: normal; 
+	border: none;
+	border-left: solid 1px #e4e4e4; 
+	color: #777; 
+	font-weight: bold; 
+	font-size: 12px; 
+}
+.jqi .jqibuttons button.jqidefaultbutton {
+	font-family: "Arial, Helvetica", sans-serif; font-size: 18px; color: #165d83; cursor: pointer; text-align: center; font-weight: normal; text-transform: uppercase; outline: none;
+}
+.jqiwarning .jqi .jqibuttons { 
+	background-color: #b95656;
+}
+
+/* sub states */
+.jqi .jqiparentstate::after { 
+	background-color: #777;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	content: '';
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+    border-radius: 0 0 4px 4px;	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px;
+}
+.jqi .jqisubstate {
+	position: absolute;
+	top:0;
+	left: 20%;
+	width: 60%;
+	padding: 7px;
+	border: solid 1px #eeeeee;
+	border-top: none;
+    border-radius: 0 0 4px 4px;	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px;
+}
+.jqi .jqisubstate .jqibuttons button {
+	padding: 20px;
+}
+
+/* JQUERY DIALOG */
+
+.ui-dialog {
+	position: fixed; top: 0; left: 0;
+	z-index: 100102;
+	display: block;
+}
+.ui-dialog .ui-dialog-titlebar {
+    padding: 45px;
+    background: #fff;
+    border: 1px solid #145476; border-radius: 0px;
+    font-family: "Arial, Helvetica", sans-serif; font-size: 28px; color: #000; text-align: center; font-weight: normal; text-transform: uppercase; text-decoration: none;
+}
+.ui-dialog .ui-button.ui-dialog-titlebar-close {
+	position: absolute; top: 30px; right: 30px;
+    padding: 18px 0px 18px 0px;
+    width: 150px;
+	display: block;
+    background: #fff;
+    border: 1px solid #aaa;
+	font-family: "Arial, Helvetica", sans-serif; font-size: 20px; color: #000; cursor: pointer; text-align: center;
+}
+.ui-dialog .ui-button.ui-dialog-titlebar-close:hover {
+	background: #dadada;
+    border: 1px solid #999;
+}
+.ui-dialog .ui-dialog-content {
+    overflow: auto;
+    background: #fff;
+    border: 1px solid #145476;
+}
+.blue_bar {
+    display: block;
+    padding: 10px;
+    background: #165d83;
+    font-family: "Arial, Helvetica", sans-serif; font-size: 18px; color: #fff; cursor: pointer; text-align: center; font-weight: normal;
+}

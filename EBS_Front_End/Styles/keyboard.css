@@ -1,0 +1,17 @@
+.ui-keyboard { margin: 0; padding: 0; width: 100%; height: 100%; z-index: 16000; border: 0px; }
+.ui-keyboard-has-focus { z-index: 16001; }
+.ui-keyboard div { font-family: "Arial, Helvetica", sans-serif; font-size: 20px; color: #000; }
+.ui-keyboard-button { min-height: 60px; width: 60px; min-width: 60px; margin: 5px; cursor: pointer; overflow: hidden; line-height: 60px; -moz-user-focus: ignore; }
+.ui-keyboard-button span { padding: 0; margin: 0; white-space: nowrap; display: inline-block; }
+.ui-keyboard-button-endrow { clear: left; }
+.ui-keyboard-widekey { min-width: 150px; width: 150px; }
+.ui-keyboard-space { width: 410px; }
+.ui-keyboard-space span, .ui-keyboard-empty span { font: 0/0 a; text-shadow: none; color: transparent; }
+.ui-keyboard-preview-wrapper { margin-top: 130px; text-align: center; }
+.ui-keyboard-preview { text-align: center; margin: 20px; display: inline; width: 87%; padding: 20px; outline: none; }
+.ui-keyboard-keyset { text-align: center; white-space: nowrap; }
+.ui-keyboard-input { text-align: left; }
+.ui-keyboard-input-current { -moz-box-shadow: 1px 1px 10px #5e9ed6; -webkit-box-shadow: 1px 1px 10px #5e9ed6; box-shadow: 1px 1px 10px #5e9ed6; }
+.ui-keyboard-placeholder { color: #888; }
+.ui-keyboard-spacer { display: inline-block; width: 1px; height: 0; }
+

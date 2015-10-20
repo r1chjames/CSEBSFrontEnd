@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="EBS_Front_End.SiteMaster" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<link href="<%= ResolveUrl("~/Styles/Site.css") %>" rel="stylesheet" type="text/css" />
+<link href="<%= ResolveUrl("~/Styles/Datepicker.css") %>" rel="stylesheet" type="text/css" />
+<link href="<%= ResolveUrl("~/Styles/Keyboard.css") %>" rel="stylesheet" type="text/css" />
+<script src="<%= ResolveUrl("~/Scripts/jquery-1.11.1.min.js") %>" type="text/javascript"></script>
+<script src="<%= ResolveUrl("~/Scripts/jquery-ui.min.js") %>" type="text/javascript"></script>
+<script src="<%= ResolveUrl("~/Scripts/jquery-impromptu.js") %>" type="text/javascript"></script>
+<script src="<%= ResolveUrl("~/Scripts/jquery.keyboard.js") %>" type="text/javascript"></script>
+<script src="<%= ResolveUrl("~/Scripts/jquery.scroller.js") %>" type="text/javascript"></script>
+
+    <div id="header">
+        <table cellpadding="0" cellspacing="0">
+            <tr>
+                <td style="padding: 0px 10px 0px 10px;"><a href="~\Default.aspx" runat="server">
+                    <img src="~/Styles/Images/home.png" runat="server" title="Home" id="imgHome" /></a>
+                </td>
+                <td id="header_text">
+                    <asp:contentplaceholder id="ContentPlaceHolder1" runat="server" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="logged">
+        <span id="logged_text">
+            <strong>
+            <asp:LoginName ID="LoginName1" FormatString="{0}" CssClass="loginname" runat="server" />
+            </strong>
+        </span>
+    </div>
+<asp:contentplaceholder id="ContentPlaceHolder2" runat="server">
+
+</asp:contentplaceholder>

@@ -1,0 +1,177 @@
+/* DATE PICKER */
+
+.ui-datepicker {
+    z-index: 3;
+    display: block;
+}
+.ui-datepicker .ui-datepicker-header {
+	position: fixed; top: 0; left: 0; z-index: 3;
+    width: 100%; height: 16%;
+}
+.ui-datepicker .ui-datepicker-prev {
+    display: block; float: left;
+	margin: 30px; padding: 18px 0px 18px 0px;
+    width: 150px;
+    border: 1px solid #aaa; border-radius: 4px;
+    font-family: "Arial, Helvetica", sans-serif; font-size: 20px; color: #212121; text-align: center; font-weight: normal; text-transform: uppercase; text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-next {
+    display: block; float: right;
+	margin: 30px; padding: 18px 0px 18px 0px;
+    width: 150px;
+    border: 1px solid #aaa; border-radius: 4px;
+    font-family: "Arial, Helvetica", sans-serif; font-size: 20px; color: #212121; text-align: center; font-weight: normal; text-transform: uppercase; text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-title {
+    padding-top: 45px;
+    font-family: "Arial, Helvetica", sans-serif; font-size: 28px; color: #000; text-align: center; font-weight: normal; text-transform: uppercase; text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-title select {
+    padding-top: 45px;
+    font-family: "Arial, Helvetica", sans-serif; font-size: 28px; color: #000; text-align: center; font-weight: normal; text-transform: uppercase; text-decoration: none;
+}
+.ui-datepicker table {
+    margin: 0; padding: 0;
+    position: fixed; top: 16%; left: 0;
+	width: 100%; height: 84%;
+	background: #fff;
+	border-collapse: collapse; border: 0;
+}
+.ui-datepicker th {
+	width: 100px;
+    margin: 5px; padding: 10px;
+    background: #165d83;
+	border: 0;
+    font-family: "Arial, Helvetica", sans-serif; font-size: 20px; color: #fff; text-align: center; font-weight: normal; text-transform: uppercase;
+}
+.ui-datepicker td {
+    margin: 0; padding-left: 8px;
+    border: 0;
+    text-align: center;
+}
+.ui-datepicker td span, .ui-datepicker td a {
+	width: 110px;
+    margin: 0; padding: 20px 10px 20px 10px;
+    display: block;
+    border-radius: 4px;
+	font-family: "Arial, Helvetica", sans-serif; font-size: 20px; color: #000; text-align: center; font-weight: normal; text-transform: uppercase; text-decoration: none;
+}
+.ui-datepicker-unselectable.ui-state-disabled span.ui-state-default {
+       background: #fff;
+       border: 1px solid #fff;
+       color: #cbcbcb;
+ }
+
+/* COMPONENT CONTAINERS */
+
+.ui-widget {
+    z-index: 4;
+}
+.ui-widget .ui-widget {
+	z-index: 4;
+}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-family: "Arial, Helvetica", sans-serif; font-size: 20px; color: #000; text-transform: uppercase; text-decoration: none;
+}
+.ui-widget-content {
+    background: #fff; border: 0px;
+    font-size: 12px; color: #000; font-weight: bold; text-transform: uppercase; cursor: pointer; letter-spacing: 1px;
+}
+.ui-widget-content a {
+	color: #000;
+}
+.ui-widget-header {
+	background: #fff;
+	border: 0;
+}
+
+/* INTERACTION STATES */
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	background: #e6e6e6;
+	border: 1px solid #d3d3d3;
+	font-weight: normal; color: #555;
+}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+	color: #555; text-decoration: none;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+	border: 1px solid #999;
+	background: #dadada;
+	font-weight: normal; color: #212121;
+}
+.ui-state-hover a, .ui-state-hover a:hover, .ui-state-hover a:link, .ui-state-hover a:visited {
+    color: #212121;	text-decoration: none;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+	border: 1px solid #aaa;
+	background: #fff;
+	color: #212121; font-weight: normal;
+}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+	color: #212121;	text-decoration: none;
+}
+
+/* ROUNDED CORNERS */
+
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+	border-top-left-radius: 4px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+	border-top-right-radius: 4px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+	border-bottom-left-radius: 4px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+	border-bottom-right-radius: 4px;
+}
+
+/* SCROLLBAR */
+
+.scroller {
+        overflow: hidden; overflow-x: hidden; overflow-y: auto; z-index: 1;
+        position: relative;
+}
+.scroller-content {
+    height: 100%;
+    overflow: auto; overflow-x: hidden; overflow-y: scroll;
+    position: relative; z-index: 1;
+	-webkit-overflow-scrolling: touch;
+}
+.scroller-bar {
+    background: #fbfbfb;
+    display: none;
+    height: 100%;
+    position: absolute; right: 0; top: 0;
+    width: 56px;
+    z-index: 2;
+}
+.scroller-track {
+    background: #fff;
+    width: 100%; height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-left: 1px solid #fff;
+}
+.scroller-handle {
+    background: #a9a9a9;
+    border: 0px;
+    cursor: s-resize;
+    width: 58px; height: 50px;
+    overflow: hidden;
+    position: absolute;
+    right: 1px; top: 0px;
+    z-index: 2;
+    -webkit-transition: right 0.1s linear, width 0.1s linear;
+    -moz-transition: right 0.1s linear, width 0.1s linear;
+    -ms-transition: right 0.1s linear, width 0.1s linear;
+    -o-transition: right 0.1s linear, width 0.1s linear;
+    transition: right 0.1s linear, width 0.1s linear;
+}
+.scroller-content::-webkit-scrollbar, .scroller-content::-webkit-scrollbar-button, .scroller-content::-webkit-scrollbar-track, .scroller-content::-webkit-scrollbar-track-piece, .scroller-content::-webkit-scrollbar-thumb, .scroller-content::-webkit-scrollbar-corner, .scroller-content::-webkit-resizer {
+    background: transparent; opacity: 0;
+}
+.scroller-active .scroller-bar {
+    display: block;
+}
